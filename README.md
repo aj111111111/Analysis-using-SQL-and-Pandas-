@@ -14,27 +14,24 @@ A leading retail company wanted to better understand consumer shopping behavior 
 
 ---
 
-## 🚀 Project Workflow & Milestones
+## 🚀 Project Workflow & Milestones f
 
 ### Milestone 1: Data Preparation & Cleaning (Python / Jupyter Lab)
-* **Dataset:** $3,900$ customer transactions with $18$ raw attributes.
-* **Data Cleaning:** Handled missing review ratings by imputing median values.
-* **Feature Engineering:** 
+**Dataset:** $3,900$ customer transactions with $18$ raw attributes.
+**Data Cleaning:** Handled missing review ratings by imputing median values.
+**Feature Engineering:** 
   * Created **`Age Group`** (`Young Adult`, `Adult`, `Middle-Aged`, `Senior`).
   * Created **`Spending Tier`** (`Low`, `Medium`, `High`) using quantile-based bucketing.
 
-```python
-import pandas as pd
-import numpy as np
 
-# Load and clean dataset
-df = pd.read_csv('customer_shopping_behavior.csv')
-df['Review Rating'] = df['Review Rating'].fillna(df['Review Rating'].median())
+## Milestone 2: SQL Data Analysis & Database Simulation (SQLite / Jupyter Lab)
+**Database Setup** & Integration: Initialized an enterprise-grade in-memory SQLite database environment directly inside Jupyter Lab and loaded the feature-engineered dataset into a structured relational table named customer_transactions.
 
-# Feature Engineering
-labels = ['Young Adult', 'Adult', 'Middle-Aged', 'Senior']
-df['Age Group'] = pd.cut(df['Age'], bins=bins, labels=labels)
-df['Spending Tier'] = pd.qcut(df['Purchase Amount (USD)'], q=3, labels=['Low', 'Medium', 'High'])
+**Relational Querying:** Simulated production-level database queries using SQL statements (SELECT, GROUP BY, ORDER BY, and aggregate functions like SUM and AVG) to extract targeted business insights.
 
-# Export cleaned data
-df.to_csv('updated_dataset.csv', index=False)
+**Segment & Channel Aggregations:** Executed multi-column groupings and filtering commands to evaluate performance across geographical regions, product categories, payment methods, and customer subscription statuses.
+
+
+
+
+
