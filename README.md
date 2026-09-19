@@ -1,6 +1,6 @@
 # Analysis-using-SQL-and-Pandas-
 
-# 🛍️ Retail Consumer Behavior Analytics Project
+## 🛍️ Retail Consumer Behavior Analytics Project
 
 An end-to-end data analytics project analyzing customer shopping patterns to optimize retail sales, customer engagement, and product strategies. Developed step-by-step using **Python (Jupyter Lab)**, **SQLite (SQL)**, and **Power BI**.
 
@@ -14,7 +14,7 @@ A leading retail company wanted to better understand consumer shopping behavior 
 
 ---
 
-## 🚀 Project Workflow & Milestones f
+## 🚀 Project Workflow & Milestones 
 
 ### Milestone 1: Data Preparation & Cleaning (Python / Jupyter Lab)
 **Dataset:** $3,900$ customer transactions with $18$ raw attributes.
