@@ -19,7 +19,7 @@ A leading retail company wanted to better understand consumer shopping behavior 
 ### Milestone 1: Data Preparation & Cleaning (Python / Jupyter Lab)
 **Dataset:** $3,900$ customer transactions with $18$ raw attributes.
 **Data Cleaning:** Handled missing review ratings by imputing median values.
-**Feature Engineering:** 
+
   * Created **`Age Group`** (`Young Adult`, `Adult`, `Middle-Aged`, `Senior`).
   * Created **`Spending Tier`** (`Low`, `Medium`, `High`) using quantile-based bucketing.
 
